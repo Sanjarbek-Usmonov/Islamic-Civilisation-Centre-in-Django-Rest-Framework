@@ -32,6 +32,8 @@ ALLOWED_HOSTS = ['*']
 PROJECT_APPS = [
     'base',
     'rest_framework',
+    'trunk',
+    'drf_yasg',
 ]
 
 INSTALLED_APPS = [
@@ -109,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
 

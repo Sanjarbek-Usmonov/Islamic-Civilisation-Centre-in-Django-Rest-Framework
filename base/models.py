@@ -35,7 +35,7 @@ class Alloma(models.Model):
     image = models.ImageField(upload_to='images')
     madrasa_alloma = models.ForeignKey(Madrasa, on_delete=models.PROTECT)
     about = models.TextField(null=True)
-    allomamenu = models.ManyToManyField(AllomaMenu, null=True)
+    allomamenu = models.ManyToManyField(AllomaMenu, null=True, blank=True)
 
     def __str__(self) -> str:
         return self.name

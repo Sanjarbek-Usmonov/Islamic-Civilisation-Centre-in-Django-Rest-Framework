@@ -28,9 +28,9 @@ class AllomaIDAPIView(views.APIView):
         serializer = AllomaIDSerializer(queryset)
         return response.Response(serializer.data)
 
+
     def get_object(self, pk):
         try:
             return Alloma.objects.get(pk=pk)
         except Alloma.DoesNotExist:
             raise Http404
-
